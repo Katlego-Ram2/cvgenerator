@@ -176,7 +176,7 @@
 
 <?php
 // Personal Information (Default values)
-$name = "Dev wizard";
+$name = "Katlego    van two  ";
 $contactEmail = "wizarddev@gmail.com";
 $contactPhone = "012108895";
 $idNumber = "0000000000000";
@@ -188,7 +188,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
 <div class="cv-container" id="cv">
     <!-- Sidebar for Personal Information -->
     <div class="sidebar">
-        <h2><input type="text"  value="<?php echo $name; ?>" /></h2>
+        <h3><b><input type="text"  value="<?php echo $name; ?>" /></h3></b>
         <p><b>Residential Address:</b><input type="text" style="color:#;" value="<?php echo $location; ?>" /></p>
         <p><b>Email Address:</b> <input type="text" value="<?php echo $contactEmail; ?>" /></p>
         <p><b>Phone Number: </b><input type="text" value="<?php echo $contactPhone; ?>" /></p>
