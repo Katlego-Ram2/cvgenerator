@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editable CV of Dev Wizard</title>
     <style>
-        /* General Styling */
+       
         * {
             margin: 0;
             padding: 0;
@@ -31,7 +31,7 @@
             gap: 20px;
         }
 
-        /* Sidebar Styling */
+     
         .sidebar {
             width: 30%;
             padding: 20px;
@@ -51,7 +51,6 @@
             color: #ffdd44;
         }
 
-/* Summary Section Heading */
 .content h2 {
     border-bottom: 3px solid #003366; /* Dark Blue line under h2 */
     padding-bottom: 10px; /* Space between text and line */
@@ -186,7 +185,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
 ?>
 
 <div class="cv-container" id="cv">
-    <!-- Sidebar for Personal Information -->
+  
     <div class="sidebar">
         <h3><b><input type="text"  value="<?php echo $name; ?>" /></h3></b>
         <p><b>Residential Address:</b><input type="text" style="color:#;" value="<?php echo $location; ?>" /></p>
@@ -231,7 +230,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
             </div>
         </div>
 
-        <!-- References -->
+     
         <div class="section">
             <h3>References</h3>
             <div id="references-list">
@@ -244,7 +243,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
     </div>
 </div>
 
-<!-- Floating Sidebar for buttons -->
+
 <div class="floating-sidebar" id="floating-sidebar">
     <button class="add-button" onclick="addSkill()">Add Skills +</button>
     <button class="add-button" onclick="addJob()">Add  Jobs +</button>
@@ -253,7 +252,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
     <button class="add-button" onclick="downloadPDF()">Download as PDF</button>
 </div>
 
-<!-- Color Picker for dynamic changes -->
+
 <div class="color-picker-container" id="color-picker-container">
     <label>Background Color:</label>
     <input type="color" id="background-color" value="#ffffff" />
@@ -356,7 +355,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
             element.style.cursor = 'grab';
         });
 
-        // For mobile (touch events)
+    
         element.addEventListener('touchstart', (e) => {
             isMouseDown = true;
             const touch = e.touches[0];
@@ -381,7 +380,7 @@ $summary = "Passionate full stack developer with expertise in both front-end and
         });
     }
 
-    // Make both floating sidebar and color picker draggable
+   
     window.onload = function () {
         makeDraggable(document.getElementById("floating-sidebar"));
         makeDraggable(document.getElementById("color-picker-container"));
